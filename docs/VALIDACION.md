@@ -23,3 +23,9 @@ Para comprobarlo manualmente: abre con Live Server, completa el perfil, registra
 ## Validación de tiempos y claridad de uso
 
 Comprobado en Chromium: minutos de sueño entre 0 y 59; conversión de registros anteriores (1,9 horas → 1 h 54 min); promedio en horas y minutos; edición sin perder duración; rechazo de sueño y descanso que sumen más de 24 horas; rechazo de fechas futuras y de un segundo registro de descanso para la misma fecha; guía de uso y aviso de almacenamiento local.
+
+## Decisiones integradas y preparación
+
+Nueve pruebas de reglas ejecutadas con `node tests/analysis.test.mjs`: falta de información; recuperación baja con sesión intensa; ausencia de autorización médica implícita; semana de lunes a domingo; carga con cobertura mínima; búsqueda de competencias comparables entre deportes intermedios; exclusión de fútbol y levantamiento de pesas del análisis por tiempo; separación de fechas; y límites de calendario.
+
+Recorrido integrado de navegador: metas personales, revisión única, orientación con motivos, actualización sin duplicar sueño, avance semanal, diario de alimentos opcional, comparación de preparación y tiempo incluyendo segundos, cobertura visible, informe de entrenador con contexto y conservación de datos anteriores.
