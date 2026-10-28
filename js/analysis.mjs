@@ -6,6 +6,7 @@ export function shiftDate(date, days) {
 }
 const total = (rows, key) => rows.reduce((sum, row) => sum + Number(row[key] || 0), 0);
 const mean = (rows, key) => rows.length ? total(rows, key) / rows.length : null;
+const readableHours = hours => {const minutes=Math.round(Number(hours)*60);return `${Math.floor(minutes/60)} h ${String(minutes%60).padStart(2,'0')} min`;};
 const within = (rows, start, end) => rows.filter(row => row.date >= start && row.date <= end);
 const valid = (value, min, max) => value !== '' && value != null && Number.isFinite(Number(value)) && Number(value) >= min && Number(value) <= max;
 
@@ -26,35 +27,35 @@ export function analyze(data, date) {
   const currentLoad = load(currentLoadRows), previousLoad = load(previousLoadRows);
   const actions = [];
   if (!restToday || !checkin) {
-    actions.push({ tone: 'neutral', title: 'Primero, conoce tu punto de partida de hoy',
-      body: 'Completa una revisión breve para relacionar tu descanso, tu energía y la sesión que tienes prevista.',
+    actions.push({ tone: 'neutral', title: 'Empieza por cómo te sientes hoy',
+      body: 'Completa una revisión breve. Así podremos relacionar cómo dormiste, tu energía y el entrenamiento que tienes previsto.',
       evidence: `${restToday ? 'Sueño registrado.' : 'Falta el sueño de hoy.'} ${checkin ? 'Revisión diaria disponible.' : 'Falta la revisión diaria.'} Los días sin datos no cuentan como días de descanso.`, action: 'checkin', label: 'Revisar mi día' });
   } else {
     const shortSleep = sleepTarget !== null && Number(restToday.hours) < sleepTarget;
     const lowRecovery = valid(restToday.recovery, 1, 5) && Number(restToday.recovery) <= 2;
     const lowEnergy = valid(checkin.energy, 1, 5) && Number(checkin.energy) <= 2;
     const hard = checkin.plannedIntensity === 'intense';
-    const evidence = [`Sueño: ${Math.round(Number(restToday.hours) * 60)} min${sleepTarget !== null ? `; tu meta: ${Math.round(sleepTarget * 60)} min` : '; no has definido una meta'}`, `recuperación: ${restToday.recovery}/5`, `energía: ${checkin.energy}/5`, `sesión prevista: ${{intense:'intensa',moderate:'moderada',easy:'suave',none:'sin sesión'}[checkin.plannedIntensity] || 'sin indicar'}`].join(' · ');
+    const evidence = [`Sueño: ${readableHours(restToday.hours)}${sleepTarget !== null ? `; tu meta: ${readableHours(sleepTarget)}` : '; no has definido una meta'}`, `recuperación: ${restToday.recovery}/5`, `energía: ${checkin.energy}/5`, `sesión prevista: ${{intense:'intensa',moderate:'moderada',easy:'suave',none:'sin sesión'}[checkin.plannedIntensity] || 'sin indicar'}`].join(' · ');
     if (shortSleep || lowRecovery || lowEnergy) {
-      actions.push({ tone: 'review', title: hard ? 'Revisa la exigencia de tu sesión de hoy' : 'Da prioridad a revisar tu recuperación',
-        body: hard ? 'Planeaste una sesión intensa y tus respuestas señalan descanso por debajo de tu meta o energía/recuperación baja. Revisa la intensidad con tu entrenador antes de seguir el plan.' : 'Revisa cómo te sientes antes de decidir la exigencia del día. Si el malestar persiste, consulta a un profesional.',
+      actions.push({ tone: 'review', title: hard ? 'Revisa tu entrenamiento intenso de hoy' : 'Revisa cómo estás recuperándote',
+        body: hard ? 'Planeaste una sesión intensa, pero indicaste poco descanso, energía o recuperación. Revisa la exigencia con tu entrenador antes de seguir el plan.' : 'Tus respuestas muestran que conviene revisar cómo te sientes antes de entrenar. Si el malestar continúa, consulta a un profesional.',
         evidence, action: 'checkin', label: 'Revisar mis respuestas' });
     } else {
-      actions.push({ tone: 'steady', title: 'Tu revisión de hoy no activa avisos',
+      actions.push({ tone: 'steady', title: 'Tu revisión de hoy está completa',
         body: 'No registraste energía ni recuperación bajas' + (sleepTarget !== null ? ' y alcanzaste tu meta de sueño.' : '. Define tu meta de sueño para poder compararla.') + ' Esto no evalúa tu aptitud física ni garantiza que debas entrenar.',
-        evidence, action: 'checkin', label: 'Actualizar revisión' });
+        evidence, action: 'checkin', label: 'Corregir mis respuestas' });
     }
     if (checkin.mealPlan === 'off-plan' || checkin.mealPlan === 'unsure') {
-      actions.push({ tone: 'review', title: 'Resuelve la alimentación antes de improvisar',
-        body: checkin.mealPlan === 'off-plan' ? 'Indicaste dificultades para seguir tu planificación. Identifica qué faltó —tiempo, disponibilidad o preparación— y organiza tu siguiente comida. Para ajustar una dieta deportiva, consulta a un nutricionista.' : 'Si no tienes una planificación adecuada a tu deporte, busca orientación nutricional. La aplicación no deduce tus necesidades calóricas a partir de una lista de alimentos.',
-        evidence: `Revisión de hoy: ${checkin.mealPlan === 'off-plan' ? 'no pude seguir mi planificación' : 'necesito orientación'}. Energía declarada: ${checkin.energy}/5.`, action: 'nutrition', label: 'Organizar mi alimentación' });
+      actions.push({ tone: 'review', title: 'Organiza tu siguiente comida',
+        body: checkin.mealPlan === 'off-plan' ? 'Indicaste que no pudiste comer como planeabas. Piensa qué te faltó: tiempo, alimentos disponibles o preparación. Usa esa información para organizar tu siguiente comida.' : 'Si necesitas ayuda para planificar tus comidas según tu deporte, consulta a un nutricionista. Puedes guardar una nota con lo que quieres preguntarle.',
+        evidence: `Revisión de hoy: ${checkin.mealPlan === 'off-plan' ? 'no pude seguir mi planificación' : 'necesito orientación'}. Energía declarada: ${checkin.energy}/5.`, action: 'nutrition', label: 'Ver mi alimentación' });
     }
   }
   if (currentLoadRows.length >= 3 && previousLoadRows.length >= 3 && previousLoad > 0) {
     const delta = (currentLoad - previousLoad) / previousLoad * 100;
     actions.push({ tone: 'neutral', title: `Tu carga registrada ${delta >= 0 ? 'aumentó' : 'disminuyó'} ${Math.abs(delta).toFixed(0)} %`,
-      body: 'Compara este cambio con el plan acordado con tu entrenador. La carga registrada no es una medición de fatiga ni un cálculo del riesgo de lesión.',
-      evidence: `${currentLoadRows.length} sesiones con esfuerzo en los últimos 7 días frente a ${previousLoadRows.length} en los 7 anteriores. Fórmula: minutos × esfuerzo (1–10). Si faltan sesiones, la comparación es incompleta.`, action: 'training', label: 'Revisar sesiones' });
+      body: 'Revisa si este cambio coincide con tu plan y con cómo te sientes. Puedes llevar esta comparación a tu entrenador.',
+      evidence: `${currentLoadRows.length} sesiones con esfuerzo en los últimos 7 días frente a ${previousLoadRows.length} en los 7 anteriores. La carga suma los minutos de cada sesión multiplicados por el esfuerzo que indicaste (1–10). Si faltan sesiones, la comparación es incompleta. No mide la fatiga ni el riesgo de lesión.`, action: 'training', label: 'Revisar sesiones' });
   }
   const weekly = { start: monday, end: shiftDate(monday, 6), sessions: thisWeek.length, minutes: total(thisWeek, 'duration'),
     targetSessions: valid(goals.weeklySessions, 1, 21) ? Number(goals.weeklySessions) : null,

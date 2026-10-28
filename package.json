@@ -1,10 +1,10 @@
 {
   "name": "elitecore",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "start": "python3 -m http.server 8080 --bind 0.0.0.0",
-    "check": "node --check js/app.js && node --check js/analysis.mjs && node --check js/product-views.mjs",
+    "check": "node --check js/app.js && node --check js/analysis.mjs && node --check js/product-views.mjs && node --check js/ux.mjs",
     "test": "node tests/analysis.test.mjs"
   }
 }

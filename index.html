@@ -1,4 +1,29 @@
-<!doctype html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#151b17"><meta name="description" content="ELITECORE. Tu preparación, tu competencia y tu progreso en un solo lugar."><title>ELITECORE · Tu siguiente nivel</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css"></head><body>
-<aside class="sidebar"><a class="brand" href="#inicio"><span class="brand-icon">E</span> ELITECORE</a><div class="workspace">TU ESPACIO DE RENDIMIENTO</div><nav id="nav"></nav><div class="sidebar-bottom"><div class="live-dot"></div><span id="storage-label">Guardado en este dispositivo</span><button class="text-button" id="account">Conectar mi cuenta ↗</button></div></aside>
-<div class="shell"><header><div class="breadcrumb">Mi espacio <span>/</span> <b id="page-name">Vista general</b></div><div class="header-right"><span id="today"></span><button class="avatar" id="profile-shortcut" aria-label="Editar perfil">EC</button></div></header><main id="main"></main><footer>ELITECORE <span>Construye tu mejor versión, un día a la vez.</span><button class="text-button" id="how-to">Cómo usar la aplicación</button><button class="text-button" id="privacy">Privacidad y datos</button></footer></div>
-<dialog id="dialog"><div class="dialog-top"><h2 id="dialog-title"></h2><button id="close-dialog" class="icon-button" aria-label="Cerrar">×</button></div><div id="dialog-content"></div></dialog><div id="toast" role="status"></div><script src="js/config.js"></script><script type="module" src="js/app.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="theme-color" content="#19261d"><meta name="description" content="ELITECORE: entiende tu preparación y sigue tu progreso deportivo.">
+ <title>ELITECORE · Tu preparación, clara</title>
+ <link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ir al contenido</a>
+<button id="menu-shade" class="menu-shade" aria-label="Cerrar menú" hidden tabindex="-1"></button>
+<aside class="sidebar" id="sidebar">
+ <div class="sidebar-top"><a class="brand" href="#inicio"><span class="brand-icon" aria-hidden="true">E</span> ELITECORE</a><button class="icon-button mobile-menu-close" id="menu-close" aria-label="Cerrar menú">×</button></div>
+ <div class="workspace">TU PREPARACIÓN DEPORTIVA</div>
+ <nav id="nav" aria-label="Navegación principal"></nav>
+ <div class="sidebar-bottom"><p><span class="live-dot"></span><span id="storage-label" role="status">Guardado en este navegador</span></p><button class="text-button" id="account">Dónde se guardan mis datos</button><button class="text-button" data-help>Ayuda para empezar</button></div>
+</aside>
+<div class="shell">
+ <header>
+  <div class="header-left"><button class="button secondary menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="sidebar">☰ Menú</button><div class="breadcrumb"><span class="desktop-breadcrumb">Mi espacio / </span><b id="page-name">Inicio</b></div></div>
+  <div class="header-right"><span id="today"></span><button class="text-button header-help" data-help>Ayuda</button><button class="avatar" id="profile-shortcut" aria-label="Abrir mi perfil">EC</button></div>
+ </header>
+ <main id="main" tabindex="-1"></main>
+ <footer><b>ELITECORE</b><span>Tu preparación, más clara.</span><button class="text-button" id="how-to">Cómo usar la aplicación</button><button class="text-button" id="privacy">Privacidad y datos</button></footer>
+</div>
+<dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title"></h2><button id="close-dialog" class="icon-button" aria-label="Cerrar ventana">×</button></div><div id="dialog-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="js/config.js"></script><script type="module" src="js/app.js"></script>
+</body></html>

@@ -64,3 +64,11 @@ En el pie de la página está **Cómo usar la aplicación**, con una explicació
 Ejecuta `npm test` (o `node tests/analysis.test.mjs`) para las nueve pruebas del análisis; no se instalan dependencias. Las orientaciones cruzan respuestas personales con la meta de sueño que define el usuario. Un valor de energía o recuperación de 1–2 sobre 5 invita a revisar la exigencia prevista; no mide fatiga fisiológica. La carga es una suma de minutos por esfuerzo declarado y no predice lesiones. No se inventan datos de días sin registro.
 
 Los dos períodos de preparación se muestran separados antes de competencias comparables. Los promedios de sueño siempre indican cuántos días tienen datos, y solo se describe su cambio con al menos tres días por período. El seguimiento alimentario refleja organización declarada, no suficiencia energética ni calidad de una dieta. No se crean dietas a partir de edad o peso. Las decisiones sobre entrenamiento y nutrición deben contrastarse con profesionales cuando corresponda.
+
+## Uso sencillo y accesibilidad
+
+Inicio muestra una acción principal para la revisión diaria. La revisión se divide en tres pasos: descanso, tu día y comidas; se puede volver atrás conservando las respuestas. Las escalas tienen opciones con palabras y las competencias usan horas, minutos y segundos. Los errores permanecen junto al campo, y eliminar un registro ofrece Deshacer. El menú principal contiene Inicio, Entrenamientos, Mi progreso y Mi perfil; las demás funciones están en Más herramientas. El celular dispone de un botón Menú.
+
+El perfil y las metas son opcionales para empezar. Las medidas personales están en una sección adicional. La ayuda está en la cabecera y en el menú. Consulta `docs/USABILIDAD.md` para relacionar las mejoras con las heurísticas de usabilidad. No se han realizado pruebas con participantes.
+
+Comprobaciones de navegador opcionales para desarrollo (Python 3): `python -m pip install playwright`, `python -m playwright install chromium`, `python tests/ux_browser.py` y `python tests/ux_guards.py`. No son dependencias de la aplicación. Los scripts sirven la web en un puerto local temporal y generan capturas en `test-results/`. La prueba de sincronización usa respuestas simuladas; no conecta con Supabase real.
