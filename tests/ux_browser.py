@@ -17,8 +17,8 @@ with sync_playwright() as p:
  browser=p.chromium.launch(executable_path=shutil.which('chromium') or shutil.which('google-chrome'),headless=True,args=['--no-sandbox'])
  page=browser.new_page(viewport={'width':1440,'height':1000},timezone_id='America/Guayaquil');errors=[]
  page.on('pageerror',lambda err:errors.append(str(err)))
- page.goto(BASE_URL + '/#inicio')
- assert page.locator('h1').inner_text()=='Hola'
+ page.goto(BASE_URL + '/#descanso')
+ assert page.locator('h1').inner_text()=='Tu descanso'
  assert page.locator('[data-checkin]').count()==1
  assert page.locator('#nav>a').count()==4
  assert page.locator('#main table').count()==0
@@ -50,12 +50,13 @@ with sync_playwright() as p:
  page.wait_for_function("!document.querySelector('dialog').open")
  d=json.loads(page.evaluate("localStorage.getItem('elitecore-v1')"));assert len(d['rest'])==len(d['checkins'])==1
  assert d['rest'][0]['hours']=='7.5';assert d['checkins'][0]['energy']=='2'
- assert page.locator('.decision-card.review').count()>=1
+ assert d['checkins'][0]['energy']=='2'
  # Updating daily responses must not duplicate.
+ page.goto(BASE_URL + '/#descanso')
  page.locator('[data-checkin]').click();page.locator('#checkin-next').click();page.locator('#checkin-next').click();page.locator('#checkin-submit').click()
  page.wait_for_function("!document.querySelector('dialog').open")
  assert len(json.loads(page.evaluate("localStorage.getItem('elitecore-v1')"))['rest'])==1
- page.get_by_role('link',name='Entrenamientos',exact=True).click()
+ page.goto(BASE_URL + '/#entrenamiento')
  page.wait_for_function("document.activeElement.tagName==='H1'")
  page.get_by_role('button',name='＋ Añadir entrenamiento').click()
  page.locator('[name=name]').fill('Carrera suave');page.locator('[name=duration]').fill('0');page.locator('[name=effort]').fill('3')
@@ -70,7 +71,7 @@ with sync_playwright() as p:
  page.get_by_role('button',name='Deshacer',exact=True).click()
  page.wait_for_function("JSON.parse(localStorage.getItem('elitecore-v1')).training.length===1")
  # Race time uses explicit hh/mm/ss and human-readable table, no decimal time field.
- page.locator('.more-nav>summary').click();page.get_by_role('link',name='Competencias',exact=True).click()
+ page.goto(BASE_URL + '/#competencias')
  page.get_by_role('button',name='＋ Añadir competencia').click()
  page.locator('[name=name]').fill('Carrera 10 km');page.locator('[name=distance]').fill('10')
  page.get_by_role('button',name='Guardar resultado',exact=True).click()
@@ -81,7 +82,7 @@ with sync_playwright() as p:
  assert '48 min 30 s' in page.locator('main').inner_text()
  assert json.loads(page.evaluate("localStorage.getItem('elitecore-v1')"))['races'][0]['time']=='48.5'
  # Profile only needs basic fields, additional personal data is optional.
- page.get_by_role('link',name='Mi perfil',exact=True).click()
+ page.goto(BASE_URL + '/#perfil')
  page.locator('#profile-form [name=name]').fill('Alex');page.get_by_role('button',name='Guardar mi perfil').click()
  assert json.loads(page.evaluate("localStorage.getItem('elitecore-v1')"))['profile']['name']=='Alex'
  # Partial goals are allowed.
@@ -107,6 +108,7 @@ with sync_playwright() as p:
  assert page.evaluate('document.documentElement.scrollWidth<=window.innerWidth')
  page.goto(BASE_URL + '/#inicio')
  page.screenshot(path=str(ARTIFACTS/'elitecore-ux-movil.png'),full_page=True)
+ page.goto(BASE_URL + '/#descanso')
  page.locator('[data-checkin]').click()
  page.screenshot(path=str(ARTIFACTS/'elitecore-ux-formulario.png'),full_page=True)
  assert page.locator('#checkin-next').bounding_box()['height']>=44

@@ -1,0 +1,386 @@
+{
+  "researchDate": "2026-10-27",
+  "readMethod": "Public source files retrieved over HTTPS; no authenticated app session or clinical review.",
+  "sources": [
+    {
+      "id": "free-exercise-db",
+      "name": "Free Exercise DB",
+      "url": "https://github.com/yuhonas/free-exercise-db",
+      "commit": "f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5",
+      "dataUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/dist/exercises.json",
+      "license": "Unlicense",
+      "licenseUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/LICENSE.md",
+      "verifiedCount": 876,
+      "note": "Repository declares dataset public domain and provides JSON and images. Individual photos do not include separate author/license metadata. This is not evidence of clinical validation."
+    },
+    {
+      "id": "wger",
+      "name": "wger",
+      "url": "https://github.com/wger-project/wger",
+      "readUrl": "https://raw.githubusercontent.com/wger-project/wger/master/README.md",
+      "license": "Code: AGPL-3.0-or-later; exercise/ingredient entries: individual Creative Commons licenses; docs: CC-BY-SA-4.0",
+      "use": "Research of workout-routine, exercise-catalogue, nutrition-database and progression patterns. No source code or licensed exercise data copied from wger.",
+      "commit": "a841e51c413843dfd16d8e51c6a3db2a119b84f5"
+    },
+    {
+      "id": "tandoor",
+      "name": "Tandoor Recipes",
+      "url": "https://github.com/TandoorRecipes/recipes",
+      "readUrl": "https://raw.githubusercontent.com/TandoorRecipes/recipes/develop/README.md",
+      "license": "README describes AGPL v3 with Commons Clause selling exception. Not a blanket permission to reuse recipe content.",
+      "use": "Research of meal-plan to shopping-list interaction. No code or recipe prose copied.",
+      "commit": "cbb96e151fe0c57c16a4456fe1bd04230b1c1e5c"
+    },
+    {
+      "id": "open-food-facts",
+      "name": "Open Food Facts API documentation",
+      "url": "https://github.com/openfoodfacts/openfoodfacts-server/blob/main/docs/api/index.md",
+      "license": "Database: ODbL; individual contents: DbCL; product photos: CC-BY-SA 3.0.",
+      "use": "Evaluate future packaged-food lookup. Not a source of meal prescriptions; data are contributed and may be incomplete."
+    }
+  ],
+  "candidateExercises": [
+    {
+      "id": "Bodyweight_Squat",
+      "spanishLabel": "Sentadilla sin peso",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Bodyweight_Squat.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Bodyweight_Squat/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Bodyweight_Squat/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "quadriceps"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Pushups",
+      "spanishLabel": "Flexión de brazos",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Pushups.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Pushups/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Pushups/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "chest"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Plank",
+      "spanishLabel": "Plancha frontal",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Plank.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Plank/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Plank/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "abdominals"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Butt_Lift_Bridge",
+      "spanishLabel": "Puente de glúteos",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Butt_Lift_Bridge.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Butt_Lift_Bridge/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Butt_Lift_Bridge/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "glutes"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Dead_Bug",
+      "spanishLabel": "Extensión alterna en el suelo",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Dead_Bug.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Dead_Bug/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Dead_Bug/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "abdominals"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Glute_Kickback",
+      "spanishLabel": "Extensión de cadera en cuatro apoyos",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Glute_Kickback.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Glute_Kickback/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Glute_Kickback/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "glutes"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Side_Bridge",
+      "spanishLabel": "Plancha lateral",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Bridge.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Bridge/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Bridge/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "abdominals"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Side_Leg_Raises",
+      "spanishLabel": "Elevación lateral de pierna",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Leg_Raises.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Leg_Raises/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Leg_Raises/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "adductors"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Standing_Hip_Circles",
+      "spanishLabel": "Círculos de cadera de pie",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Standing_Hip_Circles.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Standing_Hip_Circles/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Standing_Hip_Circles/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "abductors"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    },
+    {
+      "id": "Front_Leg_Raises",
+      "spanishLabel": "Elevación frontal de pierna",
+      "source": "free-exercise-db",
+      "originalUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Front_Leg_Raises.json",
+      "imageUrls": [
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Front_Leg_Raises/0.jpg",
+        "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Front_Leg_Raises/1.jpg"
+      ],
+      "level": "beginner",
+      "equipment": "body only",
+      "primaryMuscles": [
+        "hamstrings"
+      ],
+      "imageAvailabilityChecked": true,
+      "note": "A translation/adaptation is not an individualized or clinically reviewed instruction."
+    }
+  ],
+  "notReadBecauseBlocked": [
+    {
+      "url": "https://www.nhs.uk/live-well/exercise/get-running-with-couch-to-5k/",
+      "reason": "HTTP CONNECT 403 from environment proxy"
+    },
+    {
+      "url": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      "reason": "HTTP CONNECT 403 from environment proxy"
+    }
+  ],
+  "downloadedImages": [
+    {
+      "path": "assets/exercises/Bodyweight_Squat/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Bodyweight_Squat/0.jpg",
+      "sha256": "85715b9b75afe568ef7cb1863005be532a2457bf7e340802da0cd5cc06914b62",
+      "bytes": 37986,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Bodyweight_Squat/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Bodyweight_Squat/1.jpg",
+      "sha256": "3fa6886632674f02308cdee53ce32649fd648774701fbd20ee280d63be40e5a4",
+      "bytes": 41546,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Pushups/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Pushups/0.jpg",
+      "sha256": "8e6757ae0dc1d50a30f0ea67cdb330994947716a106451860cf7362bcd15f9f4",
+      "bytes": 66786,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Pushups/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Pushups/1.jpg",
+      "sha256": "e835d50facea325828d7a3700185a0d8ba9f908db3f033334f81a6f85f774f27",
+      "bytes": 64283,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Plank/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Plank/0.jpg",
+      "sha256": "7a6545152b4c918a84b7e0fd2c3c7d10d571f8fbda8e4459354eb24059ff245d",
+      "bytes": 43296,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Plank/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Plank/1.jpg",
+      "sha256": "7f6b690f7594dfab002fb27d36f8247957171b08d19020f24208afd4d5186043",
+      "bytes": 43135,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Butt_Lift_Bridge/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Butt_Lift_Bridge/0.jpg",
+      "sha256": "f74f6813fc43cd5f60e6779ec182049a2ddb3ed9dc5777389dd4ab1880392d5c",
+      "bytes": 57056,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Butt_Lift_Bridge/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Butt_Lift_Bridge/1.jpg",
+      "sha256": "3eacd0851b56e3e1ea29a0a73c596b0d10e4bc746dd64afaed50d7255eae0819",
+      "bytes": 58796,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Dead_Bug/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Dead_Bug/0.jpg",
+      "sha256": "8b4e3e357c201d3752ce4fe97a0f1d00b00e7479cd702f8846791fdf5df66220",
+      "bytes": 45381,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "assets/exercises/Dead_Bug/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Dead_Bug/1.jpg",
+      "sha256": "8de0d54e4c41433b809b045a82832c6632c35102bee945cd3caf522f054d6730",
+      "bytes": 46759,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "assets/exercises/Side_Leg_Raises/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Leg_Raises/0.jpg",
+      "sha256": "a19e2b448c0a27c356b2fbcdb0fd71b68018d615ab2a67819d335a1791962ce8",
+      "bytes": 29600,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Side_Leg_Raises/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Leg_Raises/1.jpg",
+      "sha256": "2ca4bb748e65324386cb437749b4aa6a5ff349f8c351a79b3747fbc6e01d970b",
+      "bytes": 30834,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Standing_Hip_Circles/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Standing_Hip_Circles/0.jpg",
+      "sha256": "57ced2e9cf5d45a1f09908b3d55cd05da9a5b41f5ca5fa54d7f45d19ecb110a7",
+      "bytes": 42015,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Standing_Hip_Circles/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Standing_Hip_Circles/1.jpg",
+      "sha256": "b4aced722e4385ada1ff785503304267070c71aad69da9c3d70bfca8c5237e72",
+      "bytes": 42873,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Front_Leg_Raises/0.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Front_Leg_Raises/0.jpg",
+      "sha256": "c5f382fe94bddfaf0f2e9bf62b0ee7864f8e20c8fea127afd1273b67f999069c",
+      "bytes": 28819,
+      "dimensions": [
+        850,
+        567
+      ]
+    },
+    {
+      "path": "assets/exercises/Front_Leg_Raises/1.jpg",
+      "sourceUrl": "https://raw.githubusercontent.com/yuhonas/free-exercise-db/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Front_Leg_Raises/1.jpg",
+      "sha256": "b1c629342aa4a2ec45637c20c582aec985828b8abc2409f7259adcab1b7b3613",
+      "bytes": 27405,
+      "dimensions": [
+        850,
+        567
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { loadCatalog,validateCatalog } from '../js/catalog.mjs';
+const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
+const response=data=>({ok:true,json:async()=>data});
+test('bundled catalog loads without credentials or remote requests',async()=>{let count=0;const data=await loadCatalog({},async()=>{count++;return response(catalog)});assert.equal(data.exercises.length,12);assert.equal(count,1);});
+test('configured public Supabase tables supply the catalog when all are available',async()=>{const seen=[];const loaded=await loadCatalog({supabaseUrl:'https://example.supabase.co',supabaseAnonKey:'public'},async(url)=>{if(typeof url!=='string')return response(catalog);seen.push(url);const key=url.includes('exercise_catalog')?'exercises':url.includes('recipe_catalog')?'recipes':'plans';return response(catalog[key].map(payload=>({payload})));});assert.equal(seen.length,3);assert.equal(loaded.recipes.length,6);});
+test('network or empty remote catalog falls back to the bundled catalog',async()=>{const loaded=await loadCatalog({supabaseUrl:'https://example.supabase.co',supabaseAnonKey:'public'},async(url)=>typeof url==='string'?response([]):response(catalog));assert.deepEqual(loaded,catalog);});
+test('invalid ids, external images and broken exercise references are rejected',()=>{for(const mutate of [c=>c.exercises[0].id='bad"onclick',c=>c.exercises[0].images=['https://unknown.example/image.jpg'],c=>c.plans[0].workouts[0].exercises[0].id='missing']){const c=structuredClone(catalog);mutate(c);assert.throws(()=>validateCatalog(c));}});

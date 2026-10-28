@@ -1,0 +1,818 @@
+{
+  "version": 1,
+  "language": "es",
+  "exercises": [
+    {
+      "id": "Bodyweight_Squat",
+      "name": "Sentadilla sin peso",
+      "category": "Piernas",
+      "equipment": "Sin equipo",
+      "steps": [
+        "De pie, separa los pies a una anchura cómoda.",
+        "Lleva la cadera atrás y flexiona las rodillas sin perder el apoyo de los pies.",
+        "Vuelve a subir con control. Usa un recorrido que puedas mantener sin dolor."
+      ],
+      "images": [
+        "assets/exercises/Bodyweight_Squat/0.jpg",
+        "assets/exercises/Bodyweight_Squat/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Bodyweight_Squat.json",
+      "level": "Inicial",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "Pushups",
+      "name": "Flexiones en el suelo",
+      "category": "Tren superior",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Apoya manos y puntas de los pies con el cuerpo alineado.",
+        "Flexiona los codos y acerca el pecho al suelo con control.",
+        "Empuja para volver. Si necesitas una variante más sencilla, elige flexiones en pared."
+      ],
+      "images": [
+        "assets/exercises/Pushups/0.jpg",
+        "assets/exercises/Pushups/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Pushups.json",
+      "level": "Intermedio",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "Plank",
+      "name": "Plancha sobre antebrazos",
+      "category": "Zona media",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Apoya los antebrazos y separa los pies a una distancia cómoda.",
+        "Mantén el cuerpo alineado, sin hundir la zona lumbar.",
+        "Respira con normalidad. Puedes apoyar las rodillas para reducir la dificultad."
+      ],
+      "images": [
+        "assets/exercises/Plank/0.jpg",
+        "assets/exercises/Plank/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Plank.json",
+      "level": "Intermedio",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "Butt_Lift_Bridge",
+      "name": "Puente de glúteos",
+      "category": "Cadera",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Túmbate boca arriba, con rodillas flexionadas y pies apoyados.",
+        "Eleva la cadera de forma controlada, sin arquear la espalda.",
+        "Baja despacio y vuelve a repetir si mantienes una postura cómoda."
+      ],
+      "images": [
+        "assets/exercises/Butt_Lift_Bridge/0.jpg",
+        "assets/exercises/Butt_Lift_Bridge/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Butt_Lift_Bridge.json",
+      "level": "Inicial",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "Dead_Bug",
+      "name": "Extensión alterna tumbado",
+      "category": "Zona media",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Túmbate boca arriba y eleva brazos y piernas flexionadas.",
+        "Extiende un brazo y la pierna contraria hasta donde controles la espalda.",
+        "Regresa y alterna. Reduce el recorrido si pierdes el control de la postura."
+      ],
+      "images": [
+        "assets/exercises/Dead_Bug/0.jpg",
+        "assets/exercises/Dead_Bug/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Dead_Bug.json",
+      "level": "Inicial",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "Side_Leg_Raises",
+      "name": "Elevación lateral de pierna",
+      "category": "Cadera",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Túmbate de lado y apoya la cabeza de forma cómoda.",
+        "Eleva la pierna superior sin girar el tronco.",
+        "Baja con control y cambia de lado a mitad del tiempo."
+      ],
+      "images": [
+        "assets/exercises/Side_Leg_Raises/0.jpg",
+        "assets/exercises/Side_Leg_Raises/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Side_Leg_Raises.json",
+      "level": "Inicial",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "Standing_Hip_Circles",
+      "name": "Círculos suaves de cadera",
+      "category": "Movilidad",
+      "equipment": "Sin equipo",
+      "steps": [
+        "De pie, apoya las manos en la cintura.",
+        "Haz círculos pequeños y lentos con la cadera.",
+        "Cambia de dirección. Evita forzar el recorrido."
+      ],
+      "images": [
+        "assets/exercises/Standing_Hip_Circles/0.jpg",
+        "assets/exercises/Standing_Hip_Circles/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Standing_Hip_Circles.json",
+      "level": "Inicial",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "Front_Leg_Raises",
+      "name": "Elevación frontal de pierna",
+      "category": "Movilidad",
+      "equipment": "Sin equipo",
+      "steps": [
+        "De pie, mantén el tronco erguido y busca un apoyo si lo necesitas.",
+        "Eleva una pierna al frente hasta una altura cómoda.",
+        "Baja con control y alterna las piernas, sin balanceos bruscos."
+      ],
+      "images": [
+        "assets/exercises/Front_Leg_Raises/0.jpg",
+        "assets/exercises/Front_Leg_Raises/1.jpg"
+      ],
+      "source": "free-exercise-db",
+      "sourceUrl": "https://github.com/yuhonas/free-exercise-db/blob/f00c92c7dcf1216a928a52c3706c7ce8e2f71ed5/exercises/Front_Leg_Raises.json",
+      "level": "Inicial",
+      "tip": "Mantén un ritmo que te permita controlar el movimiento. Detente si aparece dolor."
+    },
+    {
+      "id": "wall-push",
+      "name": "Flexiones en pared",
+      "category": "Tren superior",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Apoya las manos en una pared firme, algo más abiertas que los hombros.",
+        "Da un paso atrás y flexiona los codos para acercarte a la pared.",
+        "Empuja despacio para volver, manteniendo el cuerpo alineado."
+      ],
+      "images": [],
+      "source": "elitecore-original",
+      "level": "Inicial",
+      "tip": "Ajusta el ritmo y el recorrido a lo que te resulte cómodo."
+    },
+    {
+      "id": "march",
+      "name": "Marcha en el sitio",
+      "category": "Resistencia",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Ponte de pie en un lugar despejado.",
+        "Alterna los apoyos elevando las rodillas a una altura cómoda.",
+        "Acompaña con los brazos y regula el ritmo para poder hablar."
+      ],
+      "images": [],
+      "source": "elitecore-original",
+      "level": "Inicial",
+      "tip": "Ajusta el ritmo y el recorrido a lo que te resulte cómodo."
+    },
+    {
+      "id": "side-step",
+      "name": "Pasos laterales",
+      "category": "Resistencia",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Colócate de pie con los pies separados de forma cómoda.",
+        "Da un paso a un lado y acerca el otro pie sin cruzarlo.",
+        "Repite hacia el lado contrario. Mantén el movimiento suave."
+      ],
+      "images": [],
+      "source": "elitecore-original",
+      "level": "Inicial",
+      "tip": "Ajusta el ritmo y el recorrido a lo que te resulte cómodo."
+    },
+    {
+      "id": "walk",
+      "name": "Caminar a ritmo cómodo",
+      "category": "Activación",
+      "equipment": "Sin equipo",
+      "steps": [
+        "Elige un espacio seguro o camina suavemente en el sitio.",
+        "Mantén una postura natural y un ritmo cómodo.",
+        "Usa este tiempo para entrar en movimiento o volver a la calma."
+      ],
+      "images": [],
+      "source": "elitecore-original",
+      "level": "Inicial",
+      "tip": "Ajusta el ritmo y el recorrido a lo que te resulte cómodo."
+    }
+  ],
+  "recipes": [
+    {
+      "id": "oats-fruit",
+      "name": "Avena con yogur y fruta",
+      "slot": "Desayuno",
+      "minutes": 10,
+      "servings": 2,
+      "vegetarian": true,
+      "allergens": [
+        "lácteos",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "id": "oats",
+          "name": "Avena",
+          "quantity": 80,
+          "unit": "g"
+        },
+        {
+          "id": "yogurt",
+          "name": "Yogur natural",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "id": "banana",
+          "name": "Banana",
+          "quantity": 2,
+          "unit": "unidad"
+        },
+        {
+          "id": "cinnamon",
+          "name": "Canela",
+          "quantity": 2,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Mezcla la avena con el yogur. Si prefieres una textura más suave, déjala unos minutos.",
+        "Pela y corta las bananas.",
+        "Reparte en dos recipientes, añade la fruta y espolvorea la canela."
+      ],
+      "color": "#e7c99d",
+      "source": "elitecore-original",
+      "note": "Idea de comida para organizarte. Las porciones se pueden ajustar; no es una dieta individualizada."
+    },
+    {
+      "id": "chicken-rice",
+      "name": "Arroz con pollo y verduras",
+      "slot": "Almuerzo",
+      "minutes": 30,
+      "servings": 2,
+      "vegetarian": false,
+      "allergens": [],
+      "ingredients": [
+        {
+          "id": "rice",
+          "name": "Arroz",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "id": "chicken",
+          "name": "Pechuga de pollo",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "id": "carrot",
+          "name": "Zanahoria",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "id": "broccoli",
+          "name": "Brócoli",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "name": "Aceite de oliva",
+          "quantity": 15,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "Cocina el arroz siguiendo el envase. Lava las verduras y córtalas.",
+        "Cocina el pollo por completo en una sartén con el aceite, manteniéndolo separado de los alimentos listos para comer.",
+        "Cocina las verduras al vapor o en la sartén. Sirve con el arroz y el pollo."
+      ],
+      "color": "#d8dfb6",
+      "source": "elitecore-original",
+      "note": "Idea de comida para organizarte. Las porciones se pueden ajustar; no es una dieta individualizada."
+    },
+    {
+      "id": "lentil-salad",
+      "name": "Ensalada de lentejas",
+      "slot": "Almuerzo",
+      "minutes": 15,
+      "servings": 2,
+      "vegetarian": true,
+      "allergens": [],
+      "ingredients": [
+        {
+          "id": "lentils-cooked",
+          "name": "Lentejas cocidas",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "id": "tomato",
+          "name": "Tomate",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "id": "cucumber",
+          "name": "Pepino",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "name": "Aceite de oliva",
+          "quantity": 15,
+          "unit": "ml"
+        },
+        {
+          "id": "lemon",
+          "name": "Limón",
+          "quantity": 1,
+          "unit": "unidad"
+        }
+      ],
+      "steps": [
+        "Si usas lentejas en conserva, escúrrelas y enjuágalas.",
+        "Lava y corta el tomate y el pepino.",
+        "Mezcla todo y aliña con el aceite y el zumo de limón."
+      ],
+      "color": "#c7d8a7",
+      "source": "elitecore-original",
+      "note": "Idea de comida para organizarte. Las porciones se pueden ajustar; no es una dieta individualizada."
+    },
+    {
+      "id": "spinach-eggs",
+      "name": "Tortilla de espinaca y patata",
+      "slot": "Cena",
+      "minutes": 25,
+      "servings": 2,
+      "vegetarian": true,
+      "allergens": [
+        "huevo"
+      ],
+      "ingredients": [
+        {
+          "id": "egg",
+          "name": "Huevo",
+          "quantity": 4,
+          "unit": "unidad"
+        },
+        {
+          "id": "spinach",
+          "name": "Espinaca",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "id": "potato",
+          "name": "Patata",
+          "quantity": 300,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "name": "Aceite de oliva",
+          "quantity": 15,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "Pela y corta la patata. Cuécela hasta que esté tierna.",
+        "Lava la espinaca y cocínala brevemente en una sartén.",
+        "Bate los huevos, mezcla con la patata y la espinaca y cocina con el aceite hasta que el huevo esté cuajado."
+      ],
+      "color": "#b8cea6",
+      "source": "elitecore-original",
+      "note": "Idea de comida para organizarte. Las porciones se pueden ajustar; no es una dieta individualizada."
+    },
+    {
+      "id": "chickpea-toast",
+      "name": "Tostadas de garbanzo y aguacate",
+      "slot": "Desayuno",
+      "minutes": 12,
+      "servings": 2,
+      "vegetarian": true,
+      "allergens": [
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "id": "bread",
+          "name": "Pan integral",
+          "quantity": 160,
+          "unit": "g"
+        },
+        {
+          "id": "chickpeas-cooked",
+          "name": "Garbanzos cocidos",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "id": "avocado",
+          "name": "Aguacate",
+          "quantity": 1,
+          "unit": "unidad"
+        },
+        {
+          "id": "lemon",
+          "name": "Limón",
+          "quantity": 1,
+          "unit": "unidad"
+        },
+        {
+          "id": "tomato",
+          "name": "Tomate",
+          "quantity": 100,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Escurre los garbanzos y aplástalos con un tenedor.",
+        "Añade el aguacate y unas gotas de limón.",
+        "Tuesta el pan, extiende la mezcla y añade el tomate lavado y cortado."
+      ],
+      "color": "#bbd3a4",
+      "source": "elitecore-original",
+      "note": "Idea de comida para organizarte. Las porciones se pueden ajustar; no es una dieta individualizada."
+    },
+    {
+      "id": "tuna-pasta",
+      "name": "Pasta con atún y tomate",
+      "slot": "Cena",
+      "minutes": 20,
+      "servings": 2,
+      "vegetarian": false,
+      "allergens": [
+        "pescado",
+        "gluten"
+      ],
+      "ingredients": [
+        {
+          "id": "pasta",
+          "name": "Pasta",
+          "quantity": 160,
+          "unit": "g"
+        },
+        {
+          "id": "tuna",
+          "name": "Atún en conserva",
+          "quantity": 160,
+          "unit": "g"
+        },
+        {
+          "id": "tomato",
+          "name": "Tomate",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "id": "olive-oil",
+          "name": "Aceite de oliva",
+          "quantity": 15,
+          "unit": "ml"
+        }
+      ],
+      "steps": [
+        "Cuece la pasta siguiendo las indicaciones del envase.",
+        "Lava y corta el tomate. Cocínalo unos minutos en la sartén con el aceite.",
+        "Añade el atún escurrido, mezcla con la pasta y sirve."
+      ],
+      "color": "#e4bc9c",
+      "source": "elitecore-original",
+      "note": "Idea de comida para organizarte. Las porciones se pueden ajustar; no es una dieta individualizada."
+    }
+  ],
+  "plans": [
+    {
+      "id": "strength-home",
+      "name": "Fuerza en casa",
+      "goal": "Ganar constancia y trabajar fuerza sin equipo",
+      "description": "Circuitos sencillos para piernas, cadera y parte superior. Empieza con el tiempo que puedas mantener.",
+      "sport": "Levantamiento de pesas",
+      "icon": "strength",
+      "workouts": [
+        {
+          "id": "strength-a",
+          "name": "Piernas y cadera",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "Bodyweight_Squat",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Butt_Lift_Bridge",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Side_Leg_Raises",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "wall-push",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        },
+        {
+          "id": "strength-b",
+          "name": "Cuerpo completo",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "wall-push",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Bodyweight_Squat",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Dead_Bug",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Butt_Lift_Bridge",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        },
+        {
+          "id": "strength-c",
+          "name": "Control y estabilidad",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "Dead_Bug",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Side_Leg_Raises",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Butt_Lift_Bridge",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "wall-push",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "endurance-easy",
+      "name": "Más resistencia",
+      "goal": "Moverte con regularidad a un ritmo cómodo",
+      "description": "Marcha y movimientos sin saltos. Regula el esfuerzo para poder hablar y descansa cuando lo necesites.",
+      "sport": "Otro",
+      "icon": "endurance",
+      "workouts": [
+        {
+          "id": "endurance-a",
+          "name": "Muévete sin saltos",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "march",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "side-step",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Front_Leg_Raises",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "march",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        },
+        {
+          "id": "endurance-b",
+          "name": "Ritmo y coordinación",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "side-step",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "march",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Standing_Hip_Circles",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "side-step",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        },
+        {
+          "id": "endurance-c",
+          "name": "Movimiento continuo suave",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "march",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "side-step",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "march",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Front_Leg_Raises",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mobility-habit",
+      "name": "Moverme con constancia",
+      "goal": "Crear un hábito de movimiento suave",
+      "description": "Sesiones de movilidad y activación para incorporar una pausa activa a tu rutina.",
+      "sport": "Otro",
+      "icon": "mobility",
+      "workouts": [
+        {
+          "id": "mobility-a",
+          "name": "Activa tu cuerpo",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "walk",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Standing_Hip_Circles",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Front_Leg_Raises",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "side-step",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        },
+        {
+          "id": "mobility-b",
+          "name": "Movilidad y cadera",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "Standing_Hip_Circles",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Side_Leg_Raises",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Butt_Lift_Bridge",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "walk",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        },
+        {
+          "id": "mobility-c",
+          "name": "Una pausa para moverte",
+          "minutes": 20,
+          "exercises": [
+            {
+              "id": "walk",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Front_Leg_Raises",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "Standing_Hip_Circles",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            },
+            {
+              "id": "side-step",
+              "seconds": 30,
+              "restSeconds": 30,
+              "reps": "A tu ritmo, con control"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contentNote": "Sesiones generales de actividad para adultos, redactadas por ELITECORE. No constituyen una planificación individual de alto rendimiento ni tratamiento. Las recetas son propuestas propias, no copiadas de otras aplicaciones."
+}

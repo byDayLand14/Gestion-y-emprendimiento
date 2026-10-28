@@ -1,0 +1,9 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { workoutSteps } from '../js/experience.mjs';
+import { createProgram, planSessions, completeSession } from '../js/plan-engine.mjs';
+const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
+test('all plan timers add up to chosen duration including activation, rest and cool-down',()=>{for(const plan of catalog.plans){for(const minutes of [10,20,30]){const program=createProgram(plan.id,minutes,'2026-10-27',catalog);for(const session of planSessions(program,catalog)){const steps=workoutSteps(session,catalog);assert.equal(steps.reduce((n,s)=>n+s.seconds,0),minutes*60);assert.equal(steps[0].type,'warm');assert.equal(steps.at(-1).type,'cool');assert.ok(steps.every(s=>catalog.exercises.some(e=>e.id===s.exerciseId)));}}}});
+test('program instances can restart on same date without mixing recorded minutes',()=>{const program={...createProgram(catalog.plans[0].id,10,'2026-10-27',catalog),instanceId:'new-instance'};const before={program,training:[{id:'old',programId:'old-instance',duration:20}],mealPlan:[{id:'kept'}]};const after=completeSession(before,catalog,0,{id:'new',date:'2026-10-27',duration:8,effort:5});assert.equal(after.training[1].programId,'new-instance');assert.equal(after.training.length,2);assert.deepEqual(after.mealPlan,before.mealPlan);});
+test('catalog has sufficient source metadata and complete recipe ingredients',()=>{assert.equal(catalog.exercises.length,12);assert.equal(catalog.recipes.length,6);assert.equal(catalog.plans.length,3);for(const recipe of catalog.recipes){assert.ok(recipe.ingredients.every(i=>i.quantity>0&&i.unit&&i.id));assert.ok(recipe.steps.length>=3);assert.equal(recipe.source,'elitecore-original');assert.equal(recipe.calories,undefined);}});

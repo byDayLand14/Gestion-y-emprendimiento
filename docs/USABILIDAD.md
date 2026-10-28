@@ -32,3 +32,9 @@ Las comprobaciones automáticas de reglas, recorridos de navegador y accesibilid
 Antes de considerar validada la experiencia, conviene pedir a deportistas con distintos niveles de familiaridad tecnológica que completen las tareas anteriores sin ayuda. Se debe observar dónde dudan, qué errores cometen, si entienden los resultados y qué funciones les aportan utilidad. Sus comentarios deben orientar los siguientes cambios.
 
 El acceso a cuentas y la sincronización entre dispositivos siguen sujetos a que el propietario configure Supabase. Sin esa conexión, los registros se guardan en el navegador utilizado y requieren una copia exportada para conservarlos fuera de él. Tampoco hay una conexión automática con dispositivos deportivos ni acceso remoto de entrenadores.
+
+## Cambio del recorrido principal
+
+El recorrido principal comienza ahora por un objetivo y un tiempo disponible. Inicio presenta una sesión realizable; Mi plan organiza las cuatro semanas; Comidas ofrece recetas, planificación y lista de compras; Mi progreso reúne lo completado. La revisión diaria anterior es una herramienta opcional y ya no se exige para comenzar. Las imágenes y el temporizador ayudan a ejecutar una actividad; confirmar los minutos reales evita contar automáticamente lo que solo se mostró en pantalla. Los registros previos se conservan.
+
+No se considera suficiente cambiar el texto de una instrucción: las acciones principales producen un resultado útil —una sesión que seguir o una lista de ingredientes que comprar—. Su utilidad para distintas personas sigue pendiente de evaluación con participantes.

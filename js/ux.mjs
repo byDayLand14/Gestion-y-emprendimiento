@@ -3,7 +3,7 @@ export function field(name,label,type='text',value='',extra='',hint='') {
  return `<label class="field-label" for="f-${name}">${label}<input id="f-${name}" name="${name}" type="${type}" value="${esc(value)}" ${extra} ${hint?`aria-describedby="hint-${name}"`:''}>${hint?`<small id="hint-${name}" class="field-hint">${hint}</small>`:''}</label>`;
 }
 export function choices(name,label,options,value='',hint='') {
- return `<fieldset class="choice-group" ${hint?`aria-describedby="hint-${name}"`:''}><legend>${label}</legend>${hint?`<p id="hint-${name}" class="field-hint">${hint}</p>`:''}<div class="choice-options">${options.map(([key,text])=>`<label class="choice"><input type="radio" name="${name}" value="${esc(key)}" ${String(value)===String(key)?'checked':''} required><span>${text}</span></label>`).join('')}</div></fieldset>`;
+ return `<fieldset class="choice-group" ${hint?`aria-describedby="hint-${name}"`:''}><legend>${label}</legend>${hint?`<p id="hint-${name}" class="field-hint">${hint}</p>`:''}<div class="choice-options">${options.map(([key,text])=>`<label class="choice"><input type="radio" name="${name}" value="${esc(key)}" ${String(value)===String(key)?'checked':''} required><span><i class="choice-check" aria-hidden="true">✓</i>${text}</span></label>`).join('')}</div></fieldset>`;
 }
 export function clearErrors(form) {
  form.querySelectorAll('.field-error,.form-error').forEach(el=>el.remove());

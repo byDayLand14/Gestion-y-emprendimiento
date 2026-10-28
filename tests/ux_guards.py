@@ -40,7 +40,7 @@ with sync_playwright() as p:
  page2=b.new_page();pending=[]
  page2.route('**/js/config.js',lambda r:r.fulfill(content_type='application/javascript',body="window.ELITECORE_CONFIG={supabaseUrl:'https://example.supabase.co',supabaseAnonKey:'test-public'}"))
  page2.add_init_script("sessionStorage.setItem('elitecore-session',JSON.stringify({access_token:'test',user:{id:'test'}}))")
- page2.route('https://example.supabase.co/**',lambda r:pending.append(r))
+ page2.route('https://example.supabase.co/**',lambda r:pending.append(r) if r.request.method=='POST' else r.fulfill(json=[]))
  page2.goto(BASE_URL + '/#entrenamiento')
  page2.get_by_role('button',name='＋ Añadir entrenamiento').click()
  page2.locator('[name=name]').fill('Carrera');page2.locator('[name=duration]').fill('30');page2.locator('[name=effort]').fill('4')
@@ -53,6 +53,10 @@ with sync_playwright() as p:
  pending[0].fulfill(status=201,body='')
  page2.wait_for_function("!document.querySelector('dialog').open")
  assert json.loads(page2.evaluate("localStorage.getItem('elitecore-v1')"))['training'][0]['name']=='Carrera'
+ page2.get_by_role('link',name='Inicio',exact=True).click();page2.locator('[data-plan]').first.click();page2.get_by_role('button',name='Crear mi plan',exact=True).click()
+ page2.wait_for_function("document.querySelector('#choose-plan-form').dataset.saving==='true'")
+ page2.locator('#close-dialog').click();assert 'estamos guardando' in page2.locator('.form-error').inner_text()
+ pending[1].fulfill(status=201,body='');page2.wait_for_function("!document.querySelector('dialog').open")
  print('PASS: protección del perfil sin guardar, enlace de salto, fallo de almacenamiento sin pérdida de respuestas y protección del formulario durante sincronización pendiente (API simulada).')
  b.close()
 server.shutdown()

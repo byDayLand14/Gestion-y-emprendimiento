@@ -13,7 +13,7 @@ Este modo guarda los datos en cada navegador. No permite compartir registros ent
 ## Opción 2: añadir cuentas y base de datos con Supabase
 
 1. Crea una cuenta en **https://supabase.com** y un proyecto en el plan gratuito disponible. Guarda la contraseña de la base de datos en tu gestor de contraseñas; no se usa en el frontend.
-2. En **SQL Editor**, ejecuta una vez el contenido completo de `database/supabase.sql`. Activa las políticas de seguridad incluidas; no desactives RLS. Para volver a ejecutar el script, elimina o adapta primero las políticas y el trigger existentes.
+2. En **SQL Editor**, ejecuta el contenido completo de `database/supabase.sql`. Activa las políticas de seguridad incluidas; no desactives RLS. El script puede repetirse: actualiza sus políticas y su trigger sin borrar los registros. Ejecuta también `database/seed_catalog.sql` si deseas servir el catálogo desde Supabase.
 3. Busca la URL del proyecto y la clave pública `anon` (legacy) o publishable en **Project Settings → API / API Keys**, según la interfaz vigente.
 4. Edita `js/config.js`:
 
@@ -41,3 +41,7 @@ Cloudflare Pages permite desplegar archivos estáticos mediante carga directa o 
 ## Qué requiere trabajo adicional
 
 Las integraciones automáticas con Garmin, Strava, chips o cronometraje necesitan APIs, consentimiento y credenciales del proveedor. Un directorio real necesita profesionales y un proceso de verificación. Pagos, planes comerciales, acceso remoto de entrenadores, recuperación de contraseña desde una pantalla propia y notificaciones requieren desarrollo adicional. No se anuncian como servicios activos.
+
+## Catálogo y nueva experiencia
+
+La página ya incluye planes, movimientos e ideas de comidas sin una cuenta. Publica también las carpetas `data/` y `assets/`; si faltan, los planes o las imágenes no cargarán. No necesitas un comando de compilación. Consulta `BASE_DE_DATOS.md` para la base SQLite incluida y para los catálogos públicos de Supabase. Los archivos SQL no crean por sí mismos una cuenta externa.
