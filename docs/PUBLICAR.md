@@ -1,14 +1,14 @@
 # Publicar ELITECORE
 
-## Opción 1: web gratuita sin cuentas
+## Opción 1: GitHub Pages gratuito (sitio estático, sin PHP ni MySQL)
 
 1. En GitHub abre tu repositorio `Gestion-y-emprendimiento`.
-2. Usa **Add file → Upload files** y sube el contenido de la carpeta, de modo que `index.html` quede en la raíz. También puedes hacerlo con el control de código fuente de VS Code, publicando un commit en `main`.
-3. En **Settings → Pages**, elige **Deploy from a branch**, rama `main`, carpeta `/ (root)` y guarda. GitHub Pages requiere que el repositorio sea público para la modalidad gratuita habitual.
-4. Espera a que termine la publicación y abre la dirección que GitHub muestre. Las rutas con `#` permiten navegar sin configuración adicional del servidor.
+2. El codigo del sitio estatico ya esta en la rama `main`. El flujo de publicacion automatica esta en `.github/workflows/pages.yml`.
+3. En **Settings → Pages → Build and deployment → Source**, selecciona **GitHub Actions**. La publicacion se inicia desde la pestaña **Actions** al actualizar `main`.
+4. Cuando GitHub confirme la publicacion, abre `https://bydayland14.github.io/Gestion-y-emprendimiento/`. Las rutas con `#` permiten navegar sin configuración adicional del servidor.
 5. Comprueba en un celular que puedes guardar un entrenamiento, recargar la página y verlo de nuevo.
 
-Este modo guarda los datos en cada navegador. No permite compartir registros entre dispositivos automáticamente. Todo el contenido del repositorio público será visible: no subas datos personales ni secretos.
+Este modo guarda los datos en cada navegador. No permite compartir registros entre dispositivos automáticamente. No ejecuta el backend PHP que usa InfinityFree para cuentas, administrador y MySQL. Todo el contenido del repositorio público será visible: no subas datos personales ni secretos.
 
 ## Opción 2: añadir cuentas y base de datos con Supabase
 

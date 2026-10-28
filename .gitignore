@@ -7,3 +7,7 @@ __pycache__/
 *.log
 
 test-results/
+
+# Credenciales del servidor PHP (InfinityFree)
+api/config.php
+api/setup.php

@@ -2,6 +2,14 @@
 
 Elige un objetivo, sigue una sesión guiada y organiza tus comidas. La página incluye contenido desde el primer acceso: 12 ejercicios, 3 planes generales y 6 recetas. Funciona en celular y computadora sin instalar dependencias.
 
+## Publicar gratis en GitHub Pages
+
+Este repositorio incluye la publicacion automatica de la version **estatica** de ELITECORE. En **Settings → Pages → Build and deployment → Source**, selecciona **GitHub Actions**. Los cambios en `main` se publicaran mediante `.github/workflows/pages.yml`.
+
+Direccion prevista (activa una vez que GitHub confirme el despliegue): https://bydayland14.github.io/Gestion-y-emprendimiento/
+
+Esta edicion de GitHub Pages permite consultar y guardar registros **en el navegador**. GitHub Pages no ejecuta PHP ni MySQL, por lo que las funciones de la version PHP de InfinityFree (inicio de sesion, administrador y base de datos MySQL) necesitan seguir alojadas en InfinityFree. No publiques `api/config.php`, contraseñas de MySQL ni secretos JWT aqui.
+
 ## Usarla
 
 1. En **Inicio**, elige Fuerza en casa, Más resistencia o Moverme con constancia y una duración de 10, 20 o 30 minutos.
