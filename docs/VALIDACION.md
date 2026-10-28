@@ -19,3 +19,7 @@ Comprobación estática: `node --check js/app.js`.
 Las pruebas de API con respuestas controladas verifican el comportamiento del cliente; no prueban un proyecto Supabase real, entrega de correos ni aislamiento efectivo en un servidor desplegado. El SQL y las instrucciones se incluyen para que el propietario configure y compruebe esos servicios. No se ha publicado el sitio en ningún hosting ni se han creado cuentas externas.
 
 Para comprobarlo manualmente: abre con Live Server, completa el perfil, registra una sesión, edítala, recarga, añade descanso y alimentación, importa dos resultados de la misma distancia y disciplina, revisa la comparación y exporta tus datos. Comprueba que el informe de entrenador requiere autorización y que deja de estar disponible al retirarla. Para la conexión real y la prueba con dos cuentas, sigue PUBLICAR.md.
+
+## Validación de tiempos y claridad de uso
+
+Comprobado en Chromium: minutos de sueño entre 0 y 59; conversión de registros anteriores (1,9 horas → 1 h 54 min); promedio en horas y minutos; edición sin perder duración; rechazo de sueño y descanso que sumen más de 24 horas; rechazo de fechas futuras y de un segundo registro de descanso para la misma fecha; guía de uso y aviso de almacenamiento local.

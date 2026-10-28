@@ -47,3 +47,5 @@ Con cuenta, la base de datos aplica seguridad por fila para que cada usuario acc
 ## Publicación
 
 Sigue [la guía paso a paso](docs/PUBLICAR.md). Puedes alojar la web estática en GitHub Pages y usar Supabase para autenticación y base de datos. Los planes gratuitos tienen límites y sus condiciones pueden cambiar.
+
+En el pie de la página está **Cómo usar la aplicación**, con una explicación de cada módulo. El sueño se introduce en dos campos separados (horas y minutos); se permite un registro por fecha, sin fechas futuras, y el sueño más el descanso adicional no puede superar 24 horas por día. Los datos anteriores se conservan y se muestran convertidos a horas y minutos.
